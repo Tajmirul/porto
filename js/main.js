@@ -40,19 +40,37 @@ $(document).ready(function () {
         infinite: false,
     })
 
-    $('.count-down').countdown('2021/10/10 0:34:56').on('update.countdown', function(event) {
+
+    $.each($('.count-down'), (index, item) => {
+        const time = $(item).data('countDown');
+
+        $(item).countdown(time).on('update.countdown', function(event) {
+
             var format = '%H:%M:%S';
+
             if(event.offset.totalDays > 0) {
                 format = '%-d day%!d ' + format;
             }
-            // if(event.offset.weeks > 0) {
-            //     format = '%-w week%!w ' + format;
-            // }
+            if(event.offset.weeks > 0) {
+                format = '%-w week%!w ' + format;
+            }
             $(this).html(event.strftime(format));
 
         }).on('finish.countdown', function(event) {
             $(this).html('This offer has expired!').parent().addClass('disabled');
         });
+    })
+
+
+    $('.count-down').data('countDown');
+
+
+    $('.countTo').waypoint(function() {
+        $('.countTo').countTo();
+    }, {offset: '90%'})
+
+
+    
 
     // // my code ----------------------------------------------------------------------
     // // preloader

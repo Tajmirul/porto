@@ -1,4 +1,14 @@
-footer.footer{
+footer{
     background-color: #272727;
     color: $color-white;
+
+    .social-links {
+    	a {
+    		width: 3rem;
+    		height: 3rem;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    	}
+    }
 }

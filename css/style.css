@@ -10,7 +10,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
   background-color: #F2F3F7; }
@@ -143,7 +143,7 @@ label {
 .container-fluid {
   max-width: 1420px; }
 
-.fz-very-small {
+.fz-extra-small {
   font-size: 1.2rem !important; }
 
 .fz-small {
@@ -164,6 +164,9 @@ label {
 .text-theme {
   color: #FF6A00 !important; }
 
+.font-weight-medium {
+  font-weight: 500 !important; }
+
 .hover-text-black:hover {
   color: #000 !important; }
 
@@ -175,6 +178,9 @@ label {
 
 .hover-text-theme:hover {
   color: #FF6A00 !important; }
+
+.hover-underline:hover {
+  text-decoration: underline; }
 
 .bg-black {
   background-color: #000 !important; }
@@ -315,18 +321,44 @@ ul.submenu {
         visibility: visible;
         opacity: 1; }
 
-footer.footer {
+.subscribe-form input {
+  width: 95%;
+  max-width: 30rem; }
+
+footer {
   background-color: #272727;
   color: #fff; }
+  footer .social-links a {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
-.button.button-orange {
-  color: #fff;
-  background-color: #FF6A00;
-  padding: .5rem 2rem;
-  font-size: 1.6rem;
-  border: none; }
-  .button.button-orange:hover {
-    background-color: #cc5500; }
+.button {
+  display: inline-block; }
+  .button.button-orange {
+    color: #fff;
+    background-color: #FF6A00;
+    padding: .5rem 2rem;
+    font-size: 1.6rem;
+    border: none; }
+    .button.button-orange:hover {
+      background-color: #cc5500; }
+  .button.button-transparent {
+    padding: 5px 1rem;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border: 1px solid transparent; }
+  .button.button-transparent[data-color=white] {
+    color: #fff;
+    border-color: #fff; }
+  .button.button-transparent[data-color=black] {
+    color: #000;
+    border-color: #000; }
+  .button.button-transparent[data-color=theme] {
+    color: #FF6A00;
+    border-color: #FF6A00; }
 
 .search-box {
   padding: .8rem; }
@@ -377,6 +409,8 @@ nav {
   background-color: #fff; }
   nav .logo-area {
     padding: 0.8rem 0; }
+    nav .logo-area .logo {
+      height: 4.4rem; }
   nav ul li {
     display: inline-block; }
     nav ul li a,
@@ -448,3 +482,37 @@ nav {
     bottom: 1rem;
     left: 0;
     right: 0; }
+
+.trade-service .benefits {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 2rem;
+  opacity: 0;
+  transition: .3s; }
+  .trade-service .benefits * {
+    font-size: 1.4rem; }
+
+.trade-service:hover .benefits {
+  opacity: 1; }
+
+.product-gallery {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .product-gallery > div {
+    background-color: #fff;
+    padding: 1.5rem; }
+  .product-gallery .big {
+    grid-row: span 2;
+    grid-column: span 3; }
+  .product-gallery .tall {
+    grid-row: span 2;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .product-gallery .small {
+    grid-column: span 2; }

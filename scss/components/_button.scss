@@ -1,4 +1,6 @@
 .button {
+	display: inline-block;
+
 	&.button-orange {
 		color: $color-white;
 		background-color: $color-theme;
@@ -9,5 +11,24 @@
 		&:hover {
 			background-color: darken($color-theme, 10);
 		}
+	}
+
+	&.button-transparent {
+		padding: 5px 1rem;
+		font-size: 1.4rem;
+		border-radius: 20px;
+		border: 1px solid transparent;
+	}
+	&.button-transparent[data-color=white] {
+		color: #fff;
+		border-color: #fff;
+	}
+	&.button-transparent[data-color=black] {
+		color: #000;
+		border-color: #000;
+	}
+	&.button-transparent[data-color=theme] {
+		color: $color-theme;
+		border-color: $color-theme;
 	}
 }

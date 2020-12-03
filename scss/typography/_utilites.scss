@@ -1,5 +1,5 @@
 // font sizes ------------------------------------
-.fz-very-small{ font-size: 1.2rem !important; }
+.fz-extra-small{ font-size: 1.2rem !important; }
 .fz-small{ font-size: 1.4rem !important; }
 .fz-normal{ font-size: 1.6rem !important; }
 .fz-large{ font-size: 2rem !important; }
@@ -8,11 +8,13 @@
 
 .text-black{ color: $color-black !important; }
 .text-theme{ color: $color-theme !important; }
+.font-weight-medium { font-weight: 500 !important; }
 
 .hover-text-black:hover{ color: $color-black !important; }
 .hover-text-dark:hover{ color: $color-dark !important; }
 .hover-text-white:hover{ color: $color-white !important; }
 .hover-text-theme:hover{ color: $color-theme !important; }
+.hover-underline:hover { text-decoration: underline; }
 
 .bg-black{ background-color: $color-black !important; }
 .bg-theme{ background-color: $color-theme !important; }

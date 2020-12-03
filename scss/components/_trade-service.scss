@@ -1,0 +1,19 @@
+.trade-service {
+	.benefits {
+		top: 0;
+		left: 0;
+		background-color: rgba($color-black, .7);
+		color: $color-white;
+		padding: 2rem;
+		opacity: 0;
+		transition: .3s;
+
+		& * {
+			font-size: 1.4rem;
+		}
+	}
+
+	&:hover .benefits{
+		opacity: 1;
+	}
+}

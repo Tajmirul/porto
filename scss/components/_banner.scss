@@ -1,0 +1,20 @@
+.banner-section {
+    .banner-slider{
+        overflow: hidden;
+
+        .arrows {
+        	&.prev {
+        		transform: translate(-100%, -50%);
+        	}
+        	&.next {
+        		transform: translate(100%, -50%);
+        	}
+        }
+        
+        &:hover {
+            .arrows {
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+ul.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $color-white;
+    width: 32rem;
+    padding: 1rem 0;
+    border: 1px solid #d3d3d3;
+    visibility: hidden;
+    z-index: 1;
+
+    li {
+        display: block;
+        position: relative;
+
+        a {
+            padding: 0.5rem 1rem !important;
+            font-weight: 400;
+            display: block;
+        }
+
+        ul {
+            position: absolute;
+            left: 100%;
+            top: -1rem;
+            visibility: hidden;
+        }
+
+        &:hover {
+            box-shadow: 0 0 2px 0px #414141;
+
+            &>ul {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

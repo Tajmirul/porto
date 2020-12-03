@@ -1,0 +1,13 @@
+.button {
+	&.button-orange {
+		color: $color-white;
+		background-color: $color-theme;
+		padding: .5rem 2rem;
+		font-size: 1.6rem;
+		border: none;
+
+		&:hover {
+			background-color: darken($color-theme, 10);
+		}
+	}
+}

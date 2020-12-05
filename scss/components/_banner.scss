@@ -1,4 +1,18 @@
 .banner-section {
+
+    .navigation {
+        ul {
+            li {
+                display: block;
+            }
+
+            ul {
+                left: 100%;
+                top: 0;
+            }
+        }
+    }
+
     .banner-slider{
         overflow: hidden;
 

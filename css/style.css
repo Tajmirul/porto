@@ -296,37 +296,52 @@ ul.main-ul {
   font-size: 1.6rem;
   font-weight: 600; }
 
-ul.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  width: 32rem;
-  padding: 1rem 0;
-  border: 1px solid #d3d3d3;
-  visibility: hidden;
-  z-index: 1; }
-  ul.submenu li {
-    display: block;
-    position: relative; }
-    ul.submenu li a {
-      padding: 0.5rem 1rem !important;
-      font-weight: 400;
+.navigation > ul {
+  display: inline-block; }
+  .navigation > ul li {
+    border: none;
+    position: relative;
+    display: inline-block; }
+    .navigation > ul li a {
+      font-size: 1.3rem;
+      color: #343a40;
+      font-weight: 500;
+      padding: 1rem 1.5rem;
       display: block; }
-    ul.submenu li ul {
+      .navigation > ul li a:hover {
+        color: #FF6A00; }
+    .navigation > ul li ul {
+      padding: 1rem 0;
       position: absolute;
-      left: 100%;
-      top: -1rem;
-      visibility: hidden; }
-    ul.submenu li:hover {
-      box-shadow: 0 0 2px 0px #414141; }
-      ul.submenu li:hover > ul {
-        visibility: visible;
-        opacity: 1; }
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      width: 30rem;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(1rem);
+      transition: 0.3s; }
+      .navigation > ul li ul li {
+        display: block; }
+        .navigation > ul li ul li a {
+          padding: 0.5rem 1.5rem; }
+        .navigation > ul li ul li ul {
+          top: 0;
+          left: 100%; }
+    .navigation > ul li:hover > a {
+      color: #FF6A00; }
+    .navigation > ul li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); }
 
 .subscribe-form input {
   width: 95%;
   max-width: 30rem; }
+
+.product-card {
+  transition: 0.3s; }
 
 footer {
   background-color: #272727;
@@ -396,6 +411,13 @@ footer {
       border: 1px solid #000;
       border-left: none; }
 
+.banner-section .navigation ul li {
+  display: block; }
+
+.banner-section .navigation ul ul {
+  left: 100%;
+  top: 0; }
+
 .banner-section .banner-slider {
   overflow: hidden; }
   .banner-section .banner-slider .arrows.prev {
@@ -411,27 +433,10 @@ nav {
     padding: 0.8rem 0; }
     nav .logo-area .logo {
       height: 4.4rem; }
-  nav ul li {
-    display: inline-block; }
-    nav ul li a,
-    nav ul li p {
-      color: #343a40;
-      display: block;
-      font-size: 1.2rem;
-      padding: 0 1.5rem; }
-    nav ul li:first-child a {
-      padding-left: 0; }
-    nav ul li:last-child a {
-      padding-right: 0; }
-    nav ul li:not(:first-child) {
-      border-left: 0.5px solid rgba(247, 247, 247, 0.2); }
   nav .nav-left {
     float: left; }
   nav .nav-right {
     float: right; }
-  nav .navbar-top {
-    padding-top: 0.8rem;
-    padding-bottom: 0.5rem; }
   nav .navbar-middle {
     border-bottom: 1px solid #dedede;
     padding: 1rem; }
@@ -450,23 +455,6 @@ nav {
     border: 1px solid #dedede; }
     nav .nav-wrapper .main-desktop-nav {
       background-color: #fff; }
-      nav .nav-wrapper .main-desktop-nav ul {
-        display: inline-block; }
-      nav .nav-wrapper .main-desktop-nav li {
-        border: none;
-        position: relative; }
-        nav .nav-wrapper .main-desktop-nav li a {
-          font-size: 1.3rem;
-          color: #343a40;
-          font-weight: 500;
-          padding: 1rem 1.5rem; }
-        nav .nav-wrapper .main-desktop-nav li:first-child a {
-          padding-left: 0; }
-        nav .nav-wrapper .main-desktop-nav li:hover > a {
-          color: #FF6A00; }
-        nav .nav-wrapper .main-desktop-nav li:hover > ul {
-          opacity: 1;
-          visibility: visible; }
     nav .nav-wrapper .mobile-nav ul {
       overflow-y: scroll;
       display: flex; }

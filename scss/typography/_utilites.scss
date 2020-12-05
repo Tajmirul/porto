@@ -23,4 +23,6 @@
 .hover-bg-black:hover{ background-color: $color-black !important; }
 .hover-bg-white:hover{ background-color: $color-white !important; }
 .hover-bg-theme:hover{ background-color: $color-theme !important; }
-.hover-shadow:hover { box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2) !important; }
+.hover-shadow:hover { box-shadow: 0 0 22px 0px rgba(0, 0, 0, 0.2) !important; }
+
+.rounded-10 { border-radius: 10px; }

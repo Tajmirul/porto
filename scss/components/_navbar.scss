@@ -101,5 +101,54 @@ nav {
                 }
             }
         }
+
+        .mobile-nav {
+            ul {
+                overflow-y: scroll;
+                display: flex;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                li {
+                    a {
+                        white-space: nowrap;
+                        padding: 1rem 1.5rem;
+                        border-bottom: 3px solid transparent;
+
+                        &.active {
+                            border-bottom-color: $color-theme;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .bottom-nav-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        a {
+            padding: 1rem 0;
+            color: $color-black;
+
+            &.active {
+                color: $color-theme;
+            }
+        }
+
+        i {
+            font-size: 3rem;
+        }
     }
 }

@@ -52,21 +52,21 @@
                             <div class="search-box">
                                 <form action="#">
                                     <input type="text" name="search" placeholder="I'm searching for ...">
-                                    <select name="category">
+                                    <select name="category" class="d-none d-lg-block">
                                         <option>All Category</option>
                                         <option>Woman</option>
                                         <option>Man</option>
                                         <option>Child</option>
                                         <option>Fashion</option>
                                     </select>
-                                    <button type="submit"><i class="icofont-search"></i></button>
+                                    <button type="submit" class="d-none d-lg-block"><i class="icofont-search"></i></button>
                                 </form>
                             </div>
                             <!-- end of search box -->
                         </div>
                         <!-- end of search area -->
         
-                        <div class="card-love">
+                        <div class="card-love d-none d-lg-block">
                             <a href="#"><i class="icofont-waiter-alt"></i> <br> Name</a>
                             <a href="#"><i class="icofont-ui-message"></i> <br> Messages</a>
                             <a href="#"><i class="icofont-list"></i> <br> Wishlist</a>
@@ -79,7 +79,7 @@
             <!-- end of navbar middle -->
         
             <div class="nav-wrapper">
-                <div class="main-desktop-nav">
+                <div class="main-desktop-nav d-none d-lg-block">
                     <div class="container-fluid clearfix">
                         <ul class="float-left">
                             <li><a href="#"><i class="icofont-listing-number"></i> CATEGORY <i class="icofont-rounded-down"></i></a>
@@ -154,16 +154,63 @@
                     <!-- end of container fluid -->
                 </div>
                 <!-- end of main desktop nav -->
+                <div class="mobile-nav d-lg-none">
+                    <div class="container-fluid">
+                        <ul>
+                            <li><a href="#" class="active">Category</a></li>
+                            <li><a href="#">PRODUCTS</a></li>
+                            <li><a href="#">PAGES</a></li>
+                            <li><a href="#">FEATURES</a></li>
+                            <li><a href="#">SPACIAL OFFER</a></li>
+                            <li><a href="#">BUY</a></li>
+                            <li><a href="#">SPACIAL OFFER</a></li>
+                            <li><a href="#">BUY</a></li>
+                            <li><a href="#">READY TO SHIP</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">SPACIAL OFFER</a></li>
+                            <li><a href="#">BUY</a></li>
+                            <li><a href="#">SPACIAL OFFER</a></li>
+                            <li><a href="#">BUY</a></li>
+                            <li><a href="#">READY TO SHIP</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">SELL YOUR PRODUCTS</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- end of navbar wrapper -->
+
+            <div class="bottom-nav-bar border-top d-md-none">
+                <a href="#" class="active">
+                    <i class="icofont-ui-home"></i>
+                    <p class="mb-0">Home</p>
+                </a>
+                <a href="#">
+                    <i class="icofont-feedburner"></i>
+                    <p class="mb-0">Feeds</p>
+                </a>
+                <a href="#">
+                    <i class="icofont-ui-message"></i>
+                    <p class="mb-0">Message</p>
+                </a>
+                <a href="#">
+                    <i class="icofont-cart-alt"></i>
+                    <p class="mb-0">Cart</p>
+                </a>
+                <a href="#">
+                    <i class="icofont-waiter-alt"></i>
+                    <p class="mb-0">My Profile</p>
+                </a>
+            </div>
+            <!-- end of bottom nav bar -->
         </nav>
     </header>
 
-    <section class="banner-section mt-40">
-        <div class="container-fluid">
-            <div class="bg-white border p-4">
+    <section class="banner-section mt-lg-40">
+        <div class="container-fluid p-0 p-lg-4">
+            <div class="bg-white border p-lg-4">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 d-none d-lg-block">
                         <h5 class="heading-3 mb-4">MY MARKETS</h5>
 
                         <ul class="submenu position-static visible">
@@ -191,7 +238,7 @@
                         </ul>
                     </div>
                     <!-- end of col -->
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 p-0 p-md-4">
                         <div class="banner-slider">
                             <div class="slide">
                                 <a href="#"><img class="w-100" src="img/banner/banner-img-1.jpg" alt="Banner Image"></a>
@@ -224,11 +271,11 @@
     <section class="product-type-section my-40">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="bg-white rounded p-3">
+                <div class="col-lg-6 mb-5">
+                    <div class="bg-white rounded-10 p-3">
                         <h5 class="heading-3 mb-3">New Arrivals</h5>
                         <div class="row">
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 text-center mb-5">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-1.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -236,7 +283,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 text-center mb-5">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-2.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -244,7 +291,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 text-center mb-5">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-3.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -252,7 +299,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 text-center mb-5">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-4.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -265,11 +312,11 @@
                     </div>
                 </div>
                 <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="bg-white rounded p-3">
+                <div class="col-lg-6 mb-5">
+                    <div class="bg-white rounded-10 p-3">
                         <h5 class="heading-3 mb-3">Global Original Sources</h5>
                         <div class="row">
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 mb-5 text-center">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-5.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -277,7 +324,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 mb-5 text-center">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-6.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -285,7 +332,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 mb-5 text-center">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-7.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -293,7 +340,7 @@
                                 </a>
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-3 text-center">
+                            <div class="col-6 col-sm-3 mb-5 text-center">
                                 <a class="d-inline-block border" href="#">
                                     <img src="img/products/product-8.jpg" alt="Product">
                                     <h5 class="mb-0">BDT 1,503</h5>
@@ -313,189 +360,103 @@
     </section>
     <!-- end of product type section -->
 
-    <section class="product-type-section">
+
+    <section class="mb-40">
         <div class="container-fluid">
-            <div class="bg-white pb-4">
-                <div class="border-bottom fz-normal p-3 mb-4">
-                    <h4 class="d-inline-block mr-5 heading-2">Spacial Offer</h4> Ending in
-                    <span class="d-inline-blockml-3 font-weight-bold count-down" data-count-down="2021/10/10 0:34:56"></span>
-                    <a href="#" class="float-right py-1 button button-orange">See All</a>
-                </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="bg-white rounded-10 p-3">
+                        <h2 class="heading-1">Customized products</h2>
+                        <p class="font-weight-medium fz-normal w-75 mb-5">Partner with one of 60,000 experienced manufacturers with design & production capabilities and on-time delivery.</p>
 
-                <div class="row m-0 slider-1">
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-9.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
+                        <div class="row">
+                            <div class="col-sm-6 mb-5">
+                                <div class="p-4 rounded-10" style="background-color: #eee;">
+                                    <h5 class="heading-3 text-dark text-center">Premium OEM Factories</h5>
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-1.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-2.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-3.jpg" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-10.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
+                            <div class="col-sm-6 mb-5">
+                                <div class="p-4 rounded-10" style="background-color: #eee;">
+                                    <h5 class="heading-3 text-dark text-center">Premium OEM Factories</h5>
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-1.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-2.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-3.jpg" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-11.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-12.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-13.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-14.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-15.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col">
-                        <a href="#">
-                            <div class="text-center border product">
-                                <img src="img/products/product-16.jpg" alt="Product">
-                                <p class="fz-normal text-black mb-0">Fuska Chips - 100gm</p>
-                                <h5><span class="text-theme fz-large"><i class="icofont-taka"></i> 30</span> <del class="text-muted"><i class="icofont-taka"></i> 40</del></h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of col -->
                 </div>
-                <!-- end of row -->
+                <!-- end of col -->
+                <div class="col-lg-6 mb-5">
+                    <div class="bg-white rounded-10 p-3">
+                        <h2 class="heading-1">Ready-to-ship products</h2>
+                        <p class="font-weight-medium fz-normal w-75 mb-5">Partner with one of 60,000 experienced manufacturers with design & production capabilities and on-time delivery.</p>
+
+                        <div class="row">
+                            <div class="col-sm-6 mb-5">
+                                <div class="p-4 rounded-10" style="background-color: #eee;">
+                                    <h5 class="heading-3 text-dark text-center">Premium OEM Factories</h5>
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-4.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-5.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-6.jpg" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-5">
+                                <div class="p-4 rounded-10" style="background-color: #eee;">
+                                    <h5 class="heading-3 text-dark text-center">Premium OEM Factories</h5>
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-1.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-2.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <img src="img/products/small/product-3.jpg" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of col -->
             </div>
-        </div>
-        <!-- end of container fluid -->
-    </section>
-    <!-- end of product type section -->
-
-    <section class="category-section my-40">
-        <div class="container-fluid">
-            <div class="bg-white p-3 pb-4">
-                <h2 class="heading-1 mb-3">Category</h2>
-
-                <div class="row m-0">
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-1.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-2.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-3.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-4.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-5.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-6.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-6.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-7.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-8.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-9.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-10.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                    <div class="col-2 mb-4">
-                        <div class="border bg-white hover-shadow category">
-                            <img class="w-100" src="img/products/product-11.jpg" alt="">
-                            <p class="mb-0 text-black font-weight-bold fz-normal">Mobile</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of row -->
-            </div>
+            <!-- end of row -->
         </div>
         <!-- end of container -->
     </section>
-    <!-- end of category section -->
 
     <section class="mb-40 d-none d-lg-block">
         <div class="container-fluid">
@@ -604,16 +565,15 @@
         <!-- end of container fluid -->
     </section>
 
-
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-xl-6 mb-5">
                     <h2 class="heading-1 mb-4">WEEKLY DEAL</h2>
 
                    <div class="bg-white">
                         <div class="row m-0">
-                            <div class="col-md-6" style="background-image: url('img/pattern/pattern-2.jpg');">
+                            <div class="col-lg-6" style="background-image: url('img/pattern/pattern-2.jpg'); background-size: cover;">
                                 <div class="p-4 py-5">
                                     <h3 class="heading-1 text-white">From 10% Off</h3>
                                     <p class="fz-normal text-white mb-0 mt-4 ">Deal ends in: </p>
@@ -629,14 +589,14 @@
                                 </div>
                             </div>
                             <!-- end of col -->
-                            <div class="col-xl-3 text-center">
+                            <div class="col-6 col-xl-3 text-center">
                                 <a href="#">
                                     <img src="img/products/product-1.jpg" alt="">
                                     <p class="fz-small font-weight-bold">BDT 402</p>
                                     <p class="fz-small">BDT 600 <span class="bg-theme text-white fz-extra-small px-2 py-1 ml-2">- 10%</span></p>
                                 </a>
                             </div>
-                            <div class="col-xl-3 text-center">
+                            <div class="col-6 col-xl-3 text-center">
                                 <a href="#">
                                     <img src="img/products/product-1.jpg" alt="">
                                     <p class="fz-small font-weight-bold">BDT 402</p>
@@ -647,12 +607,12 @@
                    </div>
                 </div>
                 <!-- end of col -->
-                <div class="col-lg-6">
+                <div class="col-xl-6 mb-5">
                     <h2 class="heading-1 mb-4">SMALL COMMODITIES MARKETPLACE</h2>
 
                    <div class="bg-white">
                         <div class="row m-0">
-                            <div class="col-md-6" style="background-image: url('img/pattern/pattern-3.jpg');">
+                            <div class="col-lg-6" style="background-image: url('img/pattern/pattern-3.jpg'); background-size: cover;">
                                 <div class="p-4 py-5">
                                     <h3 class="heading-1 text-white">From 10% Off</h3>
                                     <p class="fz-normal text-white mb-0 mt-4 ">Deal ends in: </p>
@@ -668,14 +628,14 @@
                                 </div>
                             </div>
                             <!-- end of col -->
-                            <div class="col-xl-3 text-center">
+                            <div class="col-6 col-xl-3 text-center">
                                 <a href="#">
                                     <img src="img/products/product-3.jpg" alt="">
                                     <p class="fz-small font-weight-bold">BDT 402</p>
                                     <p class="fz-small">BDT 600 <span class="bg-theme text-white fz-extra-small px-2 py-1 ml-2">- 10%</span></p>
                                 </a>
                             </div>
-                            <div class="col-xl-3 text-center">
+                            <div class="col-6 col-xl-3 text-center">
                                 <a href="#">
                                     <img src="img/products/product-4.jpg" alt="">
                                     <p class="fz-small font-weight-bold">BDT 402</p>
@@ -692,250 +652,12 @@
         <!-- end of container fluid -->
     </section>
 
-
-    <section class="for-you">
-        <div class="container-fluid">
-            <h2 class="mb-4 heading-1">Just For You</h2>
-
-            <div class="row">
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-5.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-4.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-6.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-7.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-8.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-9.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-1.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-2.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-3.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-4.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-10.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-2 mb-4">
-                    <a href="#" class="text-black">
-                        <div class="bg-white hover-shadow p-3">
-                            <img src="img/products/product-11.jpg" alt="">
-                            <p class="fz-normal text-black mb-1">Lorem ipsum, dolor sit amet.</p>
-                            <p class="fz-normal text-theme mb-0"><i class="icofont-taka"></i>320</p>
-                            <p class="text-muted fz-small mb-0"><del class="mr-2"> <i class="icofont-taka"></i>400</del> -20%</p>
-                            <div class="rating d-inline-block mr-2">
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rating text-theme"></i>
-                                <i class="fz-small icofont-ui-rate-blank"></i>
-                            </div>
-                            <span class="total-rate fz-small ">(201)</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- end of col -->
-            </div>
-        </div>
-    </section>
-
     <section class="quotation-section my-40">
         <div class="container-fluid">
             <h2 class="heading-1 py-4">REQUEST FOR QUOTATION</h2>
 
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-lg-6">
                     <div class="px-40 py-50" style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)), url('img/banner/banner-5.jpg');">
                         <h3 class="mb-5 text-white">Global Sourcing Marketplace</h3>
 
@@ -963,7 +685,7 @@
                 </div>
                 <!-- end of col -->
 
-                <div class="col-xl-6 ">
+                <div class="col-lg-6 ">
                     <div class="bg-white h-100 px-40 py-50">
                         <form action="#">
                             <h2 class="mb-5">One Request, Multiple Quotes</h2>
@@ -1003,14 +725,155 @@
         <!-- end of container fluid -->
     </section>
 
+    <section class="for-you">
+        <div class="container-fluid">
+            <h2 class="mb-4 heading-1">Just For You</h2>
+
+            <div class="row m-0">
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-11.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-10.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-9.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-8.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-7.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-6.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-5.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-4.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-3.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-2.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-1.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+                <div class="col-6 col-md-4 col-lg-3 mb-3 px-2">
+                    <a href="#" class="text-black">
+                        <div class="bg-white hover-shadow border rounded p-3">
+                            <img src="img/products/product-11.jpg" alt="">
+                            <a href="#" class="fz-small hover-underline mb-4 text-black d-inline-block">Mens Swim trunk</a>
+                            <h5 class="heading-3 mb-0">BDT 93.17 - BDT 127.04 /-</h5>
+                            <p class="fz-small text-muted">500 Sets (Min. Order)</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of col -->
+            </div>
+        </div>
+    </section>
+
     <section class="trade-services-section">
         <div class="container-fluid">
             <h2 class="heading-1 py-4">OUR TRADE SERVICES ARE HERE FOR YOU</h2>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
                     <div class="bg-white trade-service">
                         <div class="position-relative">
-                            <img src="img/handshake.jpg" alt="">
+                            <img src="img/handshake.jpg" alt="" class="w-100">
                             <div class="position-absolute h-100 w-100 benefits">
                                 <p class="mb-0 text-light">Benefits</p>
                                 <ul class="mb-5 mt-3">
@@ -1028,10 +891,10 @@
                     </div>
                 </div>
                 <!-- end of col -->
-                <div class="col-lg-3">
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
                     <div class="bg-white trade-service">
                         <div class="position-relative">
-                            <img src="img/teamwork.jpg" alt="">
+                            <img src="img/teamwork.jpg" alt="" class="w-100">
                             <div class="position-absolute h-100 w-100 benefits">
                                 <p class="mb-0 text-light">Benefits</p>
                                 <ul class="mb-5 mt-3">
@@ -1049,10 +912,10 @@
                     </div>
                 </div>
                 <!-- end of col -->
-                <div class="col-lg-3">
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
                     <div class="bg-white trade-service">
                         <div class="position-relative">
-                            <img src="img/plane.jpg" alt="">
+                            <img src="img/plane.jpg" alt="" class="w-100">
                             <div class="position-absolute h-100 w-100 benefits">
                                 <p class="mb-0 text-light">Benefits</p>
                                 <ul class="mb-5 mt-3">
@@ -1070,7 +933,7 @@
                     </div>
                 </div>
                 <!-- end of col -->
-                <div class="col-lg-3">
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
                     <div class="bg-white trade-service">
                         <div class="position-relative">
                             <img src="img/store.jpg" alt="">
@@ -1097,7 +960,7 @@
         <!-- end of container -->
     </section>
 
-    <footer class="py-70 mt-50">
+    <footer class="py-70 mt-50 d-none d-md-block">
         <div class="container-fluid">
             <p class="fz-normal text-center">Trade Alert - Delivering the latest product trends and industry news straight to your inbox.</p>
             <form action="" class="subscribe-form text-center mb-50">
@@ -1107,7 +970,7 @@
             </form>
 
             <div class="row justify-content-between">
-                <div class="col-lg-2">
+                <div class="col-12 col-sm-3 col-lg-2">
                     <h4 class="heading-2 text-light mb-5">Customer Services</h4>
 
                     <ul>
@@ -1118,7 +981,7 @@
                         <li><a class="text-light fz-extra-small my-1 d-inline-block" href="#">Get paid for your feedback</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-sm-2 col-lg-2">
                     <h4 class="heading-2 text-light mb-5">Customer Services</h4>
 
                     <ul>
@@ -1129,7 +992,7 @@
                         <li><a class="text-light fz-extra-small my-1 d-inline-block" href="#">Get paid for your feedback</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-sm-2 col-lg-2">
                     <h4 class="heading-2 text-light mb-5">Customer Services</h4>
 
                     <ul>
@@ -1140,7 +1003,7 @@
                         <li><a class="text-light fz-extra-small my-1 d-inline-block" href="#">Get paid for your feedback</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-sm-2 col-lg-2">
                     <h4 class="heading-2 text-light mb-5">Customer Services</h4>
 
                     <ul>
@@ -1151,7 +1014,7 @@
                         <li><a class="text-light fz-extra-small my-1 d-inline-block" href="#">Get paid for your feedback</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-sm-3 col-lg-2">
                     <h4 class="heading-2 text-light mb-5">Customer Services</h4>
 
                     <ul>

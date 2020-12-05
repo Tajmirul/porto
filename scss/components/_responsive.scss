@@ -10,7 +10,13 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    
+    .search-box {
+    	input {
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-right: none !important;
+    	}
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)

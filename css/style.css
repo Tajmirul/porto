@@ -307,7 +307,8 @@ ul.main-ul {
       color: #343a40;
       font-weight: 500;
       padding: 1rem 1.5rem;
-      display: block; }
+      display: block;
+      transition: .3s; }
       .navigation > ul li a:hover {
         color: #FF6A00; }
     .navigation > ul li ul {
@@ -463,7 +464,11 @@ nav {
       nav .nav-wrapper .mobile-nav ul li a {
         white-space: nowrap;
         padding: 1rem 1.5rem;
-        border-bottom: 3px solid transparent; }
+        border-bottom: 3px solid transparent;
+        color: #343a40;
+        font-size: 1.4rem; }
+        nav .nav-wrapper .mobile-nav ul li a:hover {
+          color: #FF6A00; }
         nav .nav-wrapper .mobile-nav ul li a.active {
           border-bottom-color: #FF6A00; }
   nav .bottom-nav-bar {

@@ -56,6 +56,12 @@ nav {
                         white-space: nowrap;
                         padding: 1rem 1.5rem;
                         border-bottom: 3px solid transparent;
+                        color: $color-dark;
+                        font-size: 1.4rem;
+
+                        &:hover {
+                            color: $color-theme;
+                        }
 
                         &.active {
                             border-bottom-color: $color-theme;
@@ -63,8 +69,6 @@ nav {
                     }
                 }
             }
-
-
         }
     }
 

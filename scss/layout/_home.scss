@@ -12,6 +12,7 @@
             font-weight: 500;
             padding: 1rem 1.5rem;
             display: block;
+            transition: .3s;
 
             &:hover {
                 color: $color-theme;

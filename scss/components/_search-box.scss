@@ -1,5 +1,11 @@
+
+.search-area {
+    width: calc(100% - 10rem);
+    max-width: 30rem;
+}
 .search-box {
-    padding: .8rem;
+    padding: 0.8rem;
+    padding-right: 0;
     form {
         display: flex;
 
@@ -7,11 +13,11 @@
             font-size: 1.2rem;
             padding: 1rem;
             padding-left: 2.5rem;
-            // border-top-left-radius: 50px;
-            // border-bottom-left-radius: 50px;
             border-radius: 50px;
             display: inline-block;
+            // width: calc(100% - 10rem);
             width: 30rem;
+            max-width: 30rem;
             border: 1px solid $color-black;
         }
 

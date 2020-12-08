@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
-  background-color: #F7F8FA; }
+  background-color: #E9EEF5; }
 
 img {
   max-width: 100%; }
@@ -173,6 +173,9 @@ label {
 .bg-theme {
   background-color: #FF6A00 !important; }
 
+.bg-light-gray {
+  background-color: #E9EEF5; }
+
 .hover-bg-dark:hover {
   background-color: #343a40 !important; }
 
@@ -188,8 +191,14 @@ label {
 .hover-shadow:hover {
   box-shadow: 0 0 22px 0px rgba(0, 0, 0, 0.2) !important; }
 
+.border-bottom-2 {
+  border-bottom-width: 2px !important; }
+
 .rounded-10 {
-  border-radius: 10px; }
+  border-radius: 10px !important; }
+
+.rounded-pill {
+  border-radius: 50px !important; }
 
 .go-to-top {
   position: fixed;
@@ -280,6 +289,54 @@ ul.main-ul {
 .heading-3 {
   font-size: 1.6rem;
   font-weight: 600; }
+
+/*  SECTIONS  */
+.custom-row {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.custom-col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% .8%; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+  width: 100%; }
+
+.span_4_of_5 {
+  width: 79.84%; }
+
+.span_3_of_5 {
+  width: 59.68%; }
+
+.span_2_of_5 {
+  width: 39.52%; }
+
+.span_1_of_5 {
+  width: 19.36%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+  .span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 {
+    width: 100%; } }
 
 .navigation > ul {
   display: inline-block; }
@@ -528,6 +585,21 @@ nav {
     justify-content: space-between; }
   .product-gallery .small {
     grid-column: span 2; }
+
+.images-slider .img-large {
+  margin-bottom: 3rem;
+  width: 100%; }
+
+.images-slider .image-slider {
+  display: flex;
+  justify-content: center; }
+  .images-slider .image-slider a {
+    margin: 0 .5rem; }
+    .images-slider .image-slider a.active {
+      border: 0.2px solid #FF6A00; }
+  .images-slider .image-slider img {
+    width: 10rem;
+    height: 10rem; }
 
 @media (min-width: 992px) {
   .search-box input {

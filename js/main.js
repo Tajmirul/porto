@@ -39,6 +39,14 @@ $(document).ready(function () {
         slidesToScroll: 2,
         infinite: false,
     })
+    $('.slider-5').slick({
+        prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
+        nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
+        // autoplay: true,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        infinite: false,
+    })
 
 
     $.each($('.count-down'), (index, item) => {
@@ -63,13 +71,24 @@ $(document).ready(function () {
 
 
     $('.count-down').data('countDown');
-
-
     $('.countTo').waypoint(function() {
         $('.countTo').countTo();
-    }, {offset: '90%'})
+    }, {offset: '90%'});
 
 
+    const sideBar = $('#slide-bar');
+    sideBar.stickySidebar({
+        topSpacing: 60,
+        bottomSpacing: 60
+    });
+    
+    // $(window).on('scroll', () => {
+    //     const productSection = $('#product-details-section').offset().top;
+    //     const scrolled = $(document).scrollTop();
+    //     if (scrolled >= productSection) {
+    //         $('.new-side-bar').replaceWith(sideBar);
+    //     }
+    // });
     
 
     // // my code ----------------------------------------------------------------------
@@ -117,6 +136,15 @@ $(document).ready(function () {
     // $('.mobile-navigations li.has-dropdown > i').click(function () {
     //     $(this).parent().find('>ul').slideToggle()
     // });
+
+    let dataStyle = $('.data-style');
+    $.each(dataStyle, (index, item) => {
+        $(item).css({
+            'background-color': $(item).data('backgroundColor'),
+            'height': $(item).data('height'),
+            'width': $(item).data('width'),
+        });
+    });
 
 
 });    

@@ -18,6 +18,7 @@
 
 .bg-black{ background-color: $color-black !important; }
 .bg-theme{ background-color: $color-theme !important; }
+.bg-light-gray { background-color: #E9EEF5; }
 
 .hover-bg-dark:hover{ background-color: $color-dark !important; }
 .hover-bg-black:hover{ background-color: $color-black !important; }
@@ -25,4 +26,6 @@
 .hover-bg-theme:hover{ background-color: $color-theme !important; }
 .hover-shadow:hover { box-shadow: 0 0 22px 0px rgba(0, 0, 0, 0.2) !important; }
 
-.rounded-10 { border-radius: 10px; }
+.border-bottom-2 { border-bottom-width: 2px !important; }
+.rounded-10 { border-radius: 10px !important; }
+.rounded-pill { border-radius: 50px !important; }

@@ -1,0 +1,30 @@
+.images-slider {
+	.img-large {
+		margin-bottom: 3rem;
+		width: 100%;
+	}
+
+	.image-slider {
+		display: flex;
+		justify-content: center;
+
+		a {
+			margin: 0 .5rem;
+
+			&.active {
+				border: .2px solid $color-theme;
+			}
+		}
+
+		img {
+			width: 10rem;
+			height: 10rem;
+		}
+	}
+}
+
+.product-details {
+	.prices {
+		
+	}
+}
